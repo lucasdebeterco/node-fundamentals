@@ -17,6 +17,8 @@ export const routes = [
     method: 'POST',
     path: buildRoutePath('/users'),
     handler: (req, res) => {
+      console.log(req.query)
+      
       const { name, email } = req.body
 
       const user = {
